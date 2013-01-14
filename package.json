@@ -1,0 +1,27 @@
+{
+  "name": "craigspaeth.com",
+  "subdomain": "craigspaeth",
+  "domains": [
+    "craigspaeth.com",
+    "www.craigspaeth.com"
+  ],
+  "version": "0.0.1-43",
+  "private": true,
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "stylus": "*",
+    "coffee-script": "*",
+    "nap": "*",
+    "underscore": "*",
+    "connect": "*",
+    "nib": "*"
+  },
+  "scripts": {
+    "start": "coffee app.coffee"
+  }
+}
