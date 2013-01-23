@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>{Title}{block:PostSummary} - {PostSummary}{/block:PostSummary}</title>
+	<link rel="icon" href="{Favicon}"/>
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}"/>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="jquery.js"></script>
+    <script>
+		$(document).ready(function(){
+			
+			function showBubble(innerText) {
+				$("#bubble").stop(true, true);
+				$("#bubble").fadeIn("slow");
+				$("#bubble").html(innerText);
+			}
+			
+			function hideBubble() {
+				$("#bubble").stop(true, true);
+				$("#bubble").fadeOut("fast");
+			}
+			
+			function moveBubble(e) {
+				$("#bubble").css('top', e.pageY - 40);
+				$("#bubble").css('left', e.pageX + 20);
+			}
+			
+			$("#bubble").hide();
+			
+			$(".tag").mouseover(function(e){ 
+				$(this).children().hide();
+				moveBubble(e);
+				showBubble("View Permalink");
+				
+				$(this).mousemove(function(e){ 
+					moveBubble(e);
+				});
+			});
+			
+			$(".tag").mouseout(function(){ 
+				$(this).children().show();
+				hideBubble();								
+			});
+			
+			$("#rss").mouseover(function(e){
+				moveBubble(e);
+				showBubble("Arrf! Follow my RSS!");
+				
+				$(this).mousemove(function(e){ 
+					moveBubble(e);
+				});
+			});
+			
+			$("#rss").mouseout(function(){ 
+				hideBubble();
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="header">
+    	<div id="banner">	
+        </div>
+    </div>
+    <div id="body">
+    	<div id="main">
+        	{block:Posts} 
+            <div class="post">
+           	  <div style="position: relative">
+                    <div class="tag">
+                        <div style="position: relative;">
+                        	<div class="date">{ShortMonth} {MonthNumber}, {ShortYear}</div>
+                        </div>
+                        {block:Text} 
+						<div class="icon" style="background-image: url(images/text.png);" ></div>
+						{/block:Text}
+						
+						{block:Photo} 
+						<div class="icon" style="background-image: url(images/photo.png);" ></div>
+						{/block:Photo}
+						
+						{block:Quote} 
+						<div class="icon" style="background-image: url(images/quote.png);" ></div>
+						{/block:Quote}
+						
+						{block:Link} 
+						<div class="icon" style="background-image: url(images/link.png);" ></div>
+						{/block:Link}
+	
+						{block:Chat} 
+						<div class="icon" style="background-image: url(images/chat.png);" ></div>
+						{/block:Chat}
+						
+						{block:Audio} 
+						<div class="icon" style="background-image: url(images/audio.png);" ></div>
+						{/block:Audio}
+						
+						{block:Video} 
+						<div class="icon" style="background-image: url(images/video.png);" ></div>
+						{/block:Video}
+                    </div>
+                </div>
+                {block:Text}
+                <div class="text">
+                    <div class="title">
+                    	{Title}
+                  	</div>
+                    <div class="body">
+                    	{Body}
+                    </div>
+               </div>
+               {/block:Text}
+               {block:Photo} 
+               <div class="photo">
+                	<img src="{PhotoURL-500}" alt="{PhotoAlt}" />
+                    {block:Caption}
+                	<div class="caption">
+                    	Test Caption
+                  	</div>
+                    {/block:Caption}
+                </div>
+                {/block:Photo} 
+                {block:Quote}
+                <div class="quote">
+                	&#8220; {Quote} &#8221;
+                	<div class="source">
+                    	~ {Source}
+                    </div>
+                </div>
+                {/block:Quote}
+                {block:Link}
+                <div class="link">
+                	<a href="{URL}" {Target} >{Name}</a>
+                    {Description}
+                    <div class="description">
+                    </div>
+                    {/block:Description}
+                </div>
+                {/block:Link}
+                {block:Chat} 
+                <div class="chat">
+                	<div class="title">
+                    	{Title}
+                    </div>
+                    <ul>
+                    	{block:Lines}
+                        <li class="{Alt}">{block:Label}<span class="label">{Label}</span>{/block:Label} {Line}</li>
+                        {/block:Lines}
+                    </ul>
+                </div>
+                {/block:Chat} 
+                {block:Audio} 
+                <div class="audio">
+                	<div class="player">
+                    	{AudioPlayerBlack}
+                    </div>
+                	{block:Caption} 
+                	<div class="caption">
+                    	{Caption} 
+                    </div>
+                    {/block:Caption}
+                </div>
+                {/block:Audio}
+                {block:Video}
+                <div class="video">
+                	<div class="player">
+                    	{Video-400}
+                    </div>
+                    {block:Caption} 
+                	<div class="caption">
+                    	{Caption} 
+                    </div>
+                    {/block:Caption}
+                </div>
+                {/block:Video} 
+                <div class="footer">
+                </div>
+                <div class="divider">
+                </div>
+                {/block:Posts} 
+                <div class="page_nav">
+                 {block:PreviousPage}<a href="{NextPage}">« Newer Posts</a>{/block:PreviousPage} | Page {CurrentPage} of {TotalPages} | {block:NextPage}<a href="{NextPage}">Older Posts »</a>{/block:NextPage}</div>
+          </div>
+        </div>
+    <div id="sidebar">
+    	<img src="http://img.photobucket.com/albums/v287/thehaze/newblogbrown.jpg" />
+    	<div id="description">
+        	{Description}<br />
+            <img src="images/rss_fox.jpg" id="rss" /><br />
+            <h1>Take a look at my...</h1>
+            <ul>
+            	<li><a href=""><img src="images/vimeo_icon.jpg" />Vimeo</a></li>
+                <li><a href=""><img src="images/flickr_icon.jpg" />Flickr</a></li>
+                <li><a href=""><img src="images/twitter_icon.jpg" />Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+    </div>
+    <div id="footer">
+    </div>
+    <div id="bubble">
+    MOOO
+    </div>
+</body>
+
+</html>
