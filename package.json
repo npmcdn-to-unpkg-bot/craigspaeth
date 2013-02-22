@@ -5,7 +5,7 @@
     "craigspaeth.com",
     "www.craigspaeth.com"
   ],
-  "version": "0.0.1-44",
+  "version": "0.0.1-45",
   "private": true,
   "engines": {
     "node": "0.8.x",

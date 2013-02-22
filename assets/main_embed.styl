@@ -7,12 +7,16 @@ linkedin-color = #006599
 tumblr-color = #35506B
 artsy-color = #6A00CC
 
+font-smoothing()
+  vendor('font-smoothing', arguments)
+
 body
   font-family Georgia
   line-height 1.4em
   background-color #222
   color white
   transition background-color 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+  font-smoothing antialiased
   &.twitter
     background-color twitter-color
   &.github
