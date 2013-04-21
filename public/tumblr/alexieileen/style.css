@@ -1,0 +1,1880 @@
+﻿@charset "utf-8";
+
+
+
+
+
+
+
+
+
+
+
+/* CSS Document */
+
+
+
+
+
+
+
+
+
+
+
+* {
+
+
+
+
+
+	margin: 0;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+html, body {
+
+
+
+
+
+	background: url(http://www.craigspaeth.com/tumblr/alexieileen/images/bg.jpg);
+
+
+
+
+
+	font-size: 12px;
+
+
+	
+
+
+	font-family: Verdana, Geneva, sans-serif;
+
+
+
+
+
+	color: #294838;
+
+
+
+
+
+	height: 100%;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+a {
+
+
+
+
+
+	color: #47361c;
+
+
+
+
+
+	text-decoration: none;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+a:hover {
+
+
+
+
+
+	text-decoration: underline;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+a img {
+
+
+
+
+
+	border: 0px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+
+
+
+
+
+	min-height: 100%;
+
+
+
+
+
+	height: auto !important;
+
+
+
+
+
+	height: 100%;
+
+
+
+
+
+	margin: 0 auto -100px; 
+
+
+	
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.container {
+
+
+
+
+
+	background: url(http://www.craigspaeth.com/tumblr/alexieileen/images/header.jpg) no-repeat left top;
+
+
+
+
+
+	padding: 100px 0px 0px 45px;
+
+
+
+
+
+	width: 989px;
+
+
+
+
+
+	min-height: 524px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.navigation {
+
+
+
+
+
+	width: 550px;
+
+
+	
+
+
+	font-size: 40px;
+
+
+	
+
+
+	font-family: Georgia, "Times New Roman", Times, serif;
+
+
+	
+
+
+	color: #3c200c;
+
+
+	
+
+
+	padding: 0 0 0 14px;
+
+
+	
+
+
+	margin-bottom: 20px;
+
+
+	
+
+
+	word-spacing: 24px;
+
+
+}
+
+
+
+
+
+	.navigation a:hover {
+
+
+		color: #000;
+
+
+		text-decoration: none;
+
+
+	}
+
+
+
+
+
+
+
+
+.main {
+
+
+
+
+
+	width: 570px;
+
+
+
+
+
+	float: left;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.post {
+
+
+
+
+
+	position: relative;
+
+
+
+
+
+	left: -25px;
+
+
+
+
+
+	top: -20px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+	.post .top {
+
+
+
+
+
+		background: url(http://www.craigspaeth.com/tumblr/alexieileen/images/post_top_outer.png);
+
+
+
+
+
+		width: 617px;
+
+
+
+
+
+		height: 449px;
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+	.post .top_inner {
+
+
+
+
+
+		background: url(http://www.craigspaeth.com/tumblr/alexieileen/images/post_top_inner.jpg);
+
+
+
+
+
+		width: 525px;
+
+
+
+
+
+		height: 376px;
+
+
+
+
+
+		position: relative;
+
+
+
+
+
+		top: 82px;
+
+
+
+
+
+		left: 40px;
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+	.post .mid {
+
+
+
+
+
+		background: url(http://www.craigspaeth.com/tumblr/alexieileen/images/post_mid_outer.png) bottom;
+
+
+
+
+
+		width: 617px;
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+	.post .mid_inner {
+
+
+
+
+
+		background: url(http://www.craigspaeth.com/tumblr/alexieileen/images/post_mid_inner.jpg) bottom;
+
+
+
+
+
+		position: relative;
+
+
+
+
+
+		left: 40px;
+
+
+
+
+
+		width: 525px;
+
+
+
+
+
+		min-height: 193px;
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+	.post .content {
+
+
+
+
+
+		position: relative;
+
+
+
+
+
+		padding: 0px 30px 10px 30px;
+
+
+
+
+
+		top: -270px;
+
+
+
+
+
+	}
+
+
+	
+
+
+		.post .content img {
+
+
+
+
+
+			margin: 10px;
+
+
+
+
+
+		}
+
+
+
+
+
+		.post .content embed {
+
+
+
+
+
+			margin: 10px;
+
+
+
+
+
+		}	
+
+
+
+
+
+	.post .title {
+
+
+
+
+
+		position: relative;
+
+
+
+
+
+		left: 40px;
+
+
+
+
+
+		top: 35px;
+
+
+
+
+
+		color: #384d42;
+
+
+
+
+
+		font-size: 24px;
+
+
+		
+
+
+		font-family: Georgia, "Times New Roman", Times, serif;
+
+
+
+
+
+		width: 430px;
+
+
+
+
+
+		height: 67px;
+
+
+
+
+
+		overflow: auto;
+
+
+
+
+
+	}
+
+
+
+
+
+	
+
+
+
+
+
+	.post .title img {
+
+
+
+
+
+		vertical-align: baseline;
+
+
+
+
+
+		position: relative;
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+	.post .date {
+
+
+
+
+
+		background: url(http://www.craigspaeth.com/tumblr/alexieileen/images/datebox.png);
+
+
+
+
+
+		width: 35px;
+
+
+
+
+
+		height: 41px;
+
+
+
+
+
+		float: left;
+
+
+
+
+
+		position: relative;
+
+
+
+
+
+		top: 30px;
+
+
+
+
+
+		left: 17px;
+
+
+
+
+
+		padding: 9px 7px 0px 20px;
+
+
+
+
+
+		color: #555;
+
+
+
+
+
+		text-align: center;
+
+
+
+
+
+		font-family: Tahoma, Geneva, sans-serif;
+
+
+
+
+
+		font-size: 12px;
+
+
+
+
+
+		overflow: hidden;
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+	.post .bottom {
+
+
+
+
+
+		background: url(http://www.craigspaeth.com/tumblr/alexieileen/images/post_bottom.png);
+
+
+
+
+
+		width: 565px;
+
+
+
+
+
+		height: 71px;
+
+
+
+
+
+		left: 25px;
+
+
+
+
+
+		position: relative;
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+	.post .permalink {
+
+
+
+
+
+		width: 130px;
+
+
+
+
+
+		height: 70px;
+
+
+
+
+
+		float: right;
+
+
+
+
+
+		position: relative;
+
+
+
+
+
+		top: 0px;
+
+
+
+
+
+		left: 0px;
+
+
+
+
+
+		cursor: pointer;
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+	/* Photo Post */
+
+
+
+
+
+	.post .photo {
+
+
+
+
+
+		text-align: center;
+
+
+
+
+
+	}
+
+
+
+
+
+		.post .photo img {
+
+
+
+
+
+			border: solid 10px #829788;
+
+
+
+
+
+			margin: 10px;
+
+
+
+
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+		.post .photo .caption {
+
+
+
+
+
+			font-size: 11px;
+
+
+
+
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+	/* Quote Post */
+
+
+
+
+
+	.post .quote {
+
+
+
+
+
+		position: relative;
+
+
+
+
+
+		top: 70px;
+
+
+
+
+
+		text-align: center;
+
+
+
+
+
+	}	
+
+
+
+
+
+		.post .quote div.quote {
+
+
+
+
+
+			font-size: 32px;
+
+
+
+
+
+		}		
+
+
+
+
+
+
+
+
+
+
+
+		.post .quote .source {
+
+
+
+
+
+			text-align: right;
+
+
+
+
+
+			padding: 15px;
+
+
+
+
+
+			font-size: 11px;
+
+
+
+
+
+			position: relative;
+
+
+
+
+
+			top: 40px;
+
+
+
+
+
+		}		
+
+
+
+
+
+
+
+
+
+
+
+	/* Link Post */
+
+
+
+
+
+	.post .link {
+
+
+
+
+
+		text-align: center;
+
+
+
+
+
+	}
+
+
+
+
+
+		.post .link a {
+
+
+
+
+
+			font-size: 32px;
+
+
+
+
+
+		}
+
+
+
+
+
+	
+
+
+
+
+
+		.post .link .description {
+
+
+
+
+
+			padding: 5px;
+
+
+
+
+
+			font-size: 11px;
+
+
+
+
+
+			width: 450px;
+
+
+			
+
+
+			top: 120px;
+
+
+			
+
+
+			margin-bottom: 120px;
+
+
+
+
+
+		}	
+
+
+
+
+
+
+
+
+
+
+
+	/* Conversation Post */
+
+
+
+
+
+	.post .conversation ul {
+
+
+
+
+
+      list-style: none;
+
+
+
+
+
+      margin: 0 .5em 1.5em;
+
+
+
+
+
+      padding: 0;
+
+
+
+
+
+    }
+
+
+
+
+
+    
+
+
+
+
+
+		.post .conversation ul li {
+
+
+
+
+
+		  padding: .5em 0;
+
+
+
+
+
+		}
+
+
+
+
+
+		
+
+
+
+
+
+		.post .conversation ul li .person {
+
+
+
+
+
+		  font-weight: bold;
+
+
+
+
+
+		  margin-right: 1em;
+
+
+
+
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+	/* Audio Post */
+
+
+
+
+
+	.post .audio {
+
+
+
+
+
+		text-align: center;
+
+
+		
+
+
+	}	
+
+
+
+
+
+
+
+
+
+
+
+		.post .audio .caption {
+
+
+
+
+
+			font-size: 11px;
+
+
+
+
+
+			margin: 10px;
+
+
+
+
+
+		}		
+
+
+
+
+
+
+
+
+
+
+
+	/* Video Post */
+
+
+
+
+
+	.post .video {
+
+
+
+
+
+		text-align: center;
+
+
+		
+
+
+	}		
+
+
+
+
+
+
+
+
+
+
+
+		.post .video .caption {
+
+
+
+
+
+			font-size: 11px;
+
+
+
+
+
+			margin: 10px;
+
+
+
+
+
+		}
+
+
+
+
+
+.sidebar {
+
+
+
+
+
+	width: 300px;
+
+
+
+
+
+	background: #ccdcd1;
+
+
+
+
+
+	float: right;
+
+
+
+
+
+	position: relative;
+
+
+
+
+
+	top: 348px;
+
+
+
+
+
+	left: -66px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.description {
+
+
+
+
+
+	position: relative;
+
+
+
+
+
+	margin-top: -120px;
+
+
+
+
+
+	padding: 20px;
+
+
+
+
+
+	width: 252px;
+
+
+
+
+
+	overflow: hidden;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.rss {
+
+
+
+
+
+	width: 60px;
+
+
+
+
+
+	height: 60px;
+
+
+
+
+
+	position: relative;
+
+
+
+
+
+	float: right;
+
+
+
+
+
+	top: -210px;
+
+
+
+
+
+	left: -80px;
+
+
+
+
+
+	cursor: pointer;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer, .push {
+
+
+
+
+
+	width: 1000px;
+
+
+	
+
+
+	height: 100px;
+
+
+	
+
+
+	position: relative;
+
+
+	
+
+
+	top: 44px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.prev {
+
+
+
+
+
+	position: relative;
+
+
+
+
+
+	float: left;
+
+
+
+
+
+	top: 25px;
+
+
+
+
+
+	left: 5px;
+
+
+
+
+
+	width: 117px;
+
+
+
+
+
+	cursor: pointer;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.next {
+
+
+
+
+
+	position: relative;
+
+
+
+
+
+	float: right;
+
+
+
+
+
+	top: 25px;
+
+
+
+
+
+	width: 117px;
+
+
+
+
+
+	cursor: pointer;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.archive {
+
+
+
+
+
+	position: relative;
+
+
+
+
+
+	float: left;
+
+
+
+
+
+	top: 35px;
+
+
+
+
+
+	left: 25%;
+
+
+
+
+
+	width: 318px;
+
+
+
+
+
+	cursor: pointer;
+
+
+
+
+
+}
+
+
+
+
+
+.disqus {
+
+
+
+
+
+	text-align: right;
+
+
+	
+
+
+	float: left; 
+
+
+
+
+
+	position: relative; 
+
+
+
+
+
+	top: -30px; 
+
+
+
+
+
+	left: 40px;
+
+
+
+
+
+	width: 480px;
+
+
+
+
+
+}
+
+
+
+
+
+.disqus_thread {
+
+
+	
+
+
+	margin: 50px;
+
+
+	
+
+
+	padding: 20px;
+
+
+	
+
+
+	background: #D5E9D1;
+
+
+	
+
+
+}
+
+.search_form .field {
+	background: url(images/searchbar.jpg) no-repeat;
+	border: 0;
+	color: #FFF;
+	padding: 3px 10px 3px 15px;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 106px;
+	height: 22px;
+}
+
+.search_form .button {
+	background:url(images/searchbtn.jpg) no-repeat left;
+	width: 65px;
+	height: 26px;
+	border: 0;
+	position: relative;
+	top: 6px;
+	cursor: pointer;
+	outline: 0;
+}
+
+.search_form .button:active {
+	background:url(images/searchbtn_down.jpg) no-repeat right;
+	outline: none;
+}
+
+.search_form .button:focus {
+	outline: none;
+}

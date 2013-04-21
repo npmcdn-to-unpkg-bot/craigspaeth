@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>{Title}{block:PostSummary} - {PostSummary}{/block:PostSummary}</title>
+	<link rel="icon" href="{Favicon}"/>
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}"/>
+	<link href="http://www.craigspaeth.com/tumblr/alexieileen/style.css" rel="stylesheet" type="text/css">
+	<script>
+		function resize() {
+			var allDivTags = document.getElementsByTagName("div");
+	
+			for(i = 0; i < allDivTags.length; i ++) {
+				if(allDivTags[i].className == "content") {
+					var newHeight = allDivTags[i].offsetHeight - 270;					
+					
+					if(newHeight > 0) {
+						var newHeightString = newHeight + "px";
+						allDivTags[i].style.height = newHeightString;
+					}			
+				}
+			}
+		}
+	</script>
+    <!--[if IE]>
+	<style>
+		.description {
+			position: relative;
+			margin-top: -180px;
+			padding: 20px;
+			width: 252px;
+			overflow: hidden;
+		}
+	</style>
+	<![endif]-->
+	<style>
+		/* All fonts except for the Title and Navigation */
+		html, body {
+			font-size: 12px;
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+		}
+		
+		/* Navigation */
+		.navigation {
+			font-size: 40px;
+			font-family: Georgia, "Times New Roman", Times, serif;
+		}
+		
+		/* Post Titles */
+		.post .title {
+			font-size: 24px;
+			font-family: Georgia, "Times New Roman", Times, serif;
+		}
+		
+		/*  Text Post  */
+		.post .content {
+			font-size: 12px;
+		}
+		
+		/*  Photo Caption  */
+		.post .photo .caption {
+			font-size: 11px;
+		}
+		
+		/*  Quote Source  */
+		.post .quote div.quote {
+			font-size: 32px;
+		}
+		
+		/*  Link Post  */
+		.post .link a {
+			font-size: 32px;
+		}
+		
+		/*  Link Post Description */
+		.post .link .description {
+			font-size: 11px;
+		}
+		
+		/*  Audio Post Caption */
+		.post .audio .caption {
+			font-size: 11px;
+		}
+		
+		/* Video Post Caption */
+		.post .video .caption {
+			font-size: 11px;
+		}
+		
+		{CustomCSS}
+	</style>
+</head>
+
+<body onload="resize()">
+	<div class="wrapper">
+        <div class="container">
+            <div class="navigation">
+                <a href="http://www.alexieileen.com">Blog</a>
+				<!-- Simply copy and paste the address of the other section in the quotes after href='' ie: <a href='about.alexieileen.com'> -->
+                <a href="">About</a>
+              	<a href="">Gallery</a>
+				<a href="">Band</a>
+            </div>
+            <div class="main">
+            {block:Posts}
+                <div class="post">
+                  <div class="top">
+                        <div class="top_inner">
+                            <div class="date">
+                                {ShortMonth}<br /><b>{DayOfMonth}</b>
+                            </div>
+                            <div class="title">
+                                {block:Regular}{Title}{/block:Regular}
+                                {block:Conversation}{Title}{/block:Conversation}
+								{block:Quote}
+									<img src="http://www.craigspaeth.com/tumblr/alexieileen/images/quotemarks.png" />
+								{/block:Quote}
+								{block:Photo}
+									<img src="http://www.craigspaeth.com/tumblr/alexieileen/images/camera.png" />
+								{/block:Photo}
+								{block:Link}
+									<img src="http://www.craigspaeth.com/tumblr/alexieileen/images/link.png" />
+								{/block:Link}
+								{block:Audio}
+									<img src="http://www.craigspaeth.com/tumblr/alexieileen/images/audio.png" />
+								{/block:Audio}
+								{block:Video}
+									<img src="http://www.craigspaeth.com/tumblr/alexieileen/images/video.png" />
+								{/block:Video}
+                            </div>
+                        </div>
+                  </div>
+				  
+                  <div class="mid">
+                      <div class="mid_inner">
+                          <div class="content" id="content">
+                            {block:Regular}
+                                {Body}
+                            {/block:Regular}                            
+
+                            {block:Photo}
+                                <div class="photo">
+                                    {LinkOpenTag}<img src="{PhotoURL-400}" alt="{PhotoAlt}"/>{LinkCloseTag}
+                                    {block:Caption}
+                                    <div class="caption">{Caption}</div>
+                                    {/block:Caption}
+                                </div>
+                            {/block:Photo}
+                            
+                            {block:Quote}
+                                <div class="quote">
+                                    <div class="quote">
+                                    	{Quote}
+                                    </div ><br />
+                                    {block:Source}<div class="source">{Source}</div >{/block:Source}
+
+                                </div>
+                            {/block:Quote}                            
+
+                            {block:Link}
+                                <div class="link">
+                                    <a href="{URL}" {Target}>{Name}</a>
+                                    <br />
+									{block:Description}<div class="description">{Description}</div>{/block:Description}
+                                </div>
+                            {/block:Link}                            
+
+                            {block:Chat}
+                                <div class="conversation">
+                                    <ul>
+                                        {block:Lines}
+                                        <li>
+                                            {block:Label}<span class="person">{Label}</span>{/block:Label}
+                                            <span class="line">{Line}</span>
+                                        </li>
+                                        {/block:Lines}
+                                    </ul>
+                                </div>
+                            {/block:Chat}                           
+
+                            {block:Audio}
+                                <div class="audio">
+                                    {AudioPlayerBlack}
+                                    {block:Caption}
+                                        <div class="caption">{Caption}</div>
+                                    {/block:Caption}
+                                </div>
+                            {/block:Audio}                           
+
+                            {block:Video}
+                                <div class="video">
+                                    {Video-400}
+                                    {block:Caption}
+                                        <div class="caption">{Caption}</div>
+                                    {/block:Caption}
+                                </div>
+                            {/block:Video}
+                          </div>
+                      </div>
+                  </div>
+                    <div class="bottom">
+                    	<div class="disqus"><a href="{Permalink}#disqus_thread">Comments (View)</a></div>
+						<a href="{Permalink}"><div class="permalink"></div></a>
+                    </div>
+                </div>
+            {/block:Posts}
+            </div>
+			<div class="sidebar">
+				<a href="{RSS}"><div class="rss"></div></a>
+				<div class="description">
+					{Description}
+				</div>
+			</div>
+        </div>
+        <div style="clear: both"></div>
+		<div class="push"></div> 
+    </div>
+	<!--- Disqus Code --->
+		{block:Permalink}
+        <div class="disqus_thread">
+			<script type="text/javascript">
+                var disqus_url = "{Permalink}"; 
+                var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";
+            </script>
+            <div id="disqus_thread">
+            </div>
+            <script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/alexieileen/embed.js">
+            </script>
+            <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+        {/block:Permalink}
+		<script type="text/javascript">
+		//<![CDATA[
+		(function() {
+				var links = document.getElementsByTagName('a');
+				var query = '?';
+				for(var i = 0; i < links.length; i++) {
+					if(links[i].href.indexOf('#disqus_thread') >= 0) {
+						query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+					}
+				}
+				document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/alexieileen/get_num_replies.js' + query + '"></' + 'script>');
+			})();
+		//]]>
+		</script>
+	<!--- --->
+    <div class="footer">
+		{block:PreviousPage}
+			<a href="{PreviousPage}">
+				<img src="http://www.craigspaeth.com/tumblr/alexieileen/images/previous.png" class="prev" />
+			</a>
+		{/block:PreviousPage}
+        <a href="/archive" id="archive_link">
+            <img src="http://www.craigspaeth.com/tumblr/alexieileen/images/archive.png" class="archive" />
+        </a>
+        <!-- My Signature -->
+        <div style="position: relative; left: 250px; top: 80px;">
+            <a href="http://www.craigspaeth.com">
+                <img src="http://www.craigspaeth.com/tumblr/signature.png" alt="Tumblr design by Craig Spaeth" />
+            </a>
+        </div>
+        <!-- End Signature -->
+		{block:NextPage}
+			<a href="{NextPage}">
+				<img src="http://www.craigspaeth.com/tumblr/alexieileen/images/next.png" class="next" />
+			</a>
+		{/block:NextPage}
+    </div>
+</body>
+</html>
