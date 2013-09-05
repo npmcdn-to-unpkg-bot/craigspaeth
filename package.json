@@ -20,8 +20,5 @@
     "underscore": "*",
     "connect": "*",
     "nib": "*"
-  },
-  "scripts": {
-    "start": "node_modules/.bin/coffee app.coffee"
   }
 }
