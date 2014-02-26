@@ -11,10 +11,11 @@ font-smoothing()
   vendor('font-smoothing', arguments)
 
 body
-  font-family Georgia
+  background-color #151515
+  color text-color
+  font-family 'Open Sans', sans-serif
+  font-size 15px
   line-height 1.4em
-  background-color #222
-  color white
   transition background-color 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000)
   font-smoothing antialiased
   &.twitter
@@ -28,23 +29,48 @@ body
   &.artsy
     background-color artsy-color
 h1
-  margin 60px 0 40px 0
+  margin 30px 0
   text-align center
-  font-size 50px
-  font-weight normal
+  font-size 28px
+  font-weight 600
   text-transform uppercase
-  letter-spacing 10px
+  letter-spacing 6px
+  color white
 h2
   text-align center
+  color white
+  a
+    padding-bottom 1px
+    padding-left 2px
+    border-bottom 1px solid rgba(255,255,255,0.7)
 a
   color white
   text-decoration none
-  border-bottom 1px solid
+  transition color 0.2s
 ul
-  width 470px
-  margin 40px auto
+  margin 30px auto
+  text-align center
+  font-weight 700
+  text-transform uppercase
+  letter-spacing 3px
+  font-size 11px
+  a
+    color rgba(255,255,255,0.8)
   li
-    float left
-    margin-right 82px
+    display inline-block
+    padding 3px 15px
+    margin-right 20px
+    border 1px solid rgba(255,255,255,0.2)
+    &:hover, &:active
+      a
+        color white
     &:last-child
       margin-right 0
+
+#container
+  top 50%
+  position absolute
+  margin-top -125px
+  display block
+  left 50%
+  margin-left -282px
