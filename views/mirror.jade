@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .mirror-flickity( data-flickity )
+    for i in [1,2,3,4,5,6,7]
+      .mirror-container
+        .mirror-img-container
+          img( src="images/mirror/#{i}.jpg" )
+          .mirror-caption!= captions[i - 1]
+    .mirror-container
+      .mirror-iframe-container
+        iframe(
+          src='https://player.vimeo.com/video/8201644?color=ffffff'
+          width='768'
+          height='432'
+          frameborder='0'
+          webkitallowfullscreen=''
+          mozallowfullscreen=''
+          allowfullscreen=''
+        )
+        .mirror-caption Screen capture of initial gameplay prototype

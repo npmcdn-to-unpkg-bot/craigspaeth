@@ -6,8 +6,10 @@ html
       rel='stylesheet'
       type='text/css'
     )
-    != nap.css('all')
+    link( rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.css" media="screen" )
+    link( rel="stylesheet" type="text/css" href="main.css" )
   body#body
     block content
     #scripts
-      != nap.js('all')
+      script( src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js" )
+      script( src='main.js' )

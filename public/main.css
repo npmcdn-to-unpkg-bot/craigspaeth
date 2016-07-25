@@ -1,0 +1,248 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body {
+  background-color: #000;
+  color: rgba(255,255,255,0.8);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: background-color 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: background-color 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: background-color 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: background-color 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+body.twitter {
+  background-color: #46b9f1;
+}
+body.github {
+  background-color: #5791ca;
+}
+body.linkedin {
+  background-color: #006599;
+}
+body.tumblr {
+  background-color: #35506b;
+}
+body.artsy {
+  background-color: #6a00cc;
+}
+h1 {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  padding-bottom: 3px;
+}
+h2 {
+  text-align: center;
+  color: #fff;
+}
+h2 a {
+  padding-bottom: 1px;
+  padding-left: 2px;
+}
+a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  transition: color 0.2s;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+a:hover,
+a:active {
+  color: #fff;
+}
+ul {
+  margin: 30px auto;
+  text-align: center;
+}
+ul a {
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 3px;
+}
+ul li {
+  display: inline-block;
+  margin-right: 17px;
+  padding-right: 17px;
+  border-right: 1px solid rgba(255,255,255,0.12);
+}
+ul li a {
+  padding-bottom: 3px;
+  font-size: 12px;
+}
+ul li:last-child {
+  margin-right: 0;
+  border-right: 0;
+  padding-right: 0;
+}
+#container {
+  top: 50%;
+  position: absolute;
+  margin-top: -125px;
+  display: block;
+  left: 50%;
+  margin-left: -282px;
+}
+.mirror-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.mirror-container .mirror-img-container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.mirror-container .mirror-img-container img {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  max-height: 80vh;
+}
+.mirror-container .mirror-caption {
+  color: #aaa;
+  margin-top: 30px;
+  font-family: Baskerville, Georgia, serif;
+  font-size: 21px;
+  display: block;
+  text-align: center;
+}
+.mirror-container .mirror-iframe-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 768px;
+  height: 432px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.flickity-page-dots {
+  display: none;
+}
+.flickity-prev-next-button {
+  background: transparent;
+  height: 100vh;
+  padding: 0 50px;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  right: 0;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}

@@ -12,13 +12,16 @@
     "npm": "1.1.x"
   },
   "dependencies": {
-    "express": "*",
-    "jade": "*",
-    "stylus": "*",
-    "coffee-script": "*",
-    "nap": "*",
-    "underscore": "*",
-    "connect": "*",
-    "nib": "*"
+    "babelify": "^7.3.0",
+    "browserify-dev-middleware": "^1.0.0",
+    "coffee-script": "^1.10.0",
+    "connect": "^3.4.1",
+    "express": "^4.14.0",
+    "flickity": "^2.0.2",
+    "imagesloaded": "^4.1.0",
+    "jade": "^1.11.0",
+    "nib": "^1.1.0",
+    "stylus": "^0.54.5",
+    "underscore": "^1.8.3"
   }
 }
